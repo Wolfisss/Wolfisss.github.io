@@ -6,7 +6,7 @@
  <script>
   function wrapValue(n) {
    var local = n;
-   return function() {local;}
+   return function() {return local;}
   }
   var wrap1 = wrapValue(1);
   var wrap2 = wrapValue(2);
