@@ -2,10 +2,15 @@
 <html>
 <head>
 </head>
-<body> aza1
+<body> aza2
  <script>
-  var x = 50;
-  alert("hello world" + x);
+  function wrapValue(n) {
+   var local = n;
+   return function() {local;}
+  }
+  var wrap1 = wrapValue(1);
+  var wrap2 = wrapValue(2);
+  alert(wrap1());
  </script>
 </body>
 </html>
