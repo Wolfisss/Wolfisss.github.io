@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>
-  Cat the cat
+  Catch the cat
 </title>
 </head>
 <body bgcolor = purple> 
@@ -16,7 +16,7 @@
   if (lastTime != null)
    angle += (time - lastTime)*0.001;
   lastTime = time;
-  cat.style.top = (Math.sin(angle)*40) + "px";
+  cat.style.top = (Math.sin(angle)*100) + "px";
   cat.style.left = (Math.cos(angle)*200) + "px";
   requestAnimationFrame(animate);
  }
