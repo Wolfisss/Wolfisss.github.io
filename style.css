@@ -4,7 +4,9 @@ body {
 }
 div.ready {
  background: green;
+ opacity: 0.5;
 }
 div.notready {
  background: red;
+ opacity: 0.5;
 }
