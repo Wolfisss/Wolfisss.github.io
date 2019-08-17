@@ -2,6 +2,9 @@ body {
  background: black url(wolf.jpeg) no-repeat;
  background-size: 100%;
 }
+a {
+ text-decoration: none;
+}
 div {
  margin: 10px;
 }
