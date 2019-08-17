@@ -6,6 +6,7 @@ a {
  text-decoration: none;
 }
 div {
+ color: yellow;
  margin: 10px;
  border: 2px solid yellow;
  border-radius: 5px;
