@@ -11,7 +11,14 @@
     style="position: relative"
     onclick="
  let bb = document.querySelector('body');
-  bb.style.backgroundColor = 'red';
+ bb.style.backgroundColor = randCol();
+ function randCol(){
+  var r = Math.floor(Math.random()*256),
+      g = Math.floor(Math.random()*256),
+      b = Math.floor(Math.random()*256);
+  return '#' + r.toString(16) +
+   g.toString(16) + b.toString(16);
+ }
 "/>
   </p>
 <script>
