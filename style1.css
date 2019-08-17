@@ -3,4 +3,6 @@ body {
 }
 #d1 {
  background: green;
+ width: 100%;
+ height: auto;
 }
