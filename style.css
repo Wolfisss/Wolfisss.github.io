@@ -1,3 +1,6 @@
 div.ready {
- background: yellow;
+ background: green;
+}
+div.notready {
+ background: red;
 }
