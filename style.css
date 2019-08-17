@@ -9,6 +9,7 @@ div {
  margin: 10px;
  border: 2px solid yellow;
  border-radius: 5px;
+ padding-left: 5px;
 }
 div.ready {
  background: green;
