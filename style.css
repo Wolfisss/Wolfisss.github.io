@@ -1,5 +1,5 @@
 body {
- background: url(wolf.jpeg);
+ background: url(wolf.jpeg) no-repeat;;
 }
 div.ready {
  background: green;
