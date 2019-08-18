@@ -1,8 +1,7 @@
 body {
- background: red;
+ background: black;
 }
 #d1 {
- background: green;
  height: 500px;
- min-width: 320px;
+ width: 500px;
 }
