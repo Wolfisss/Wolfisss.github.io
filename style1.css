@@ -1,6 +1,9 @@
 body {
  background: #000000;
 }
+.txtcenter {
+ text-align: center;
+}
 .knopka {
  width: 100px;
  height: 50px;
