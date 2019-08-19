@@ -1,15 +1,13 @@
-body {
- margin: 0;
- color: yellow;
- background: black;
-}
-#d1 {
- text-align: center;
+.knopka {
+ width: 100px;
+ height: 50px;
+ margin: 20px;
+ color: white;
  background: gray;
- margin: 50px;
- width: 220px;
- height: 40px;
+ border: 2px solid white;
+ border-radius: 4px;
 }
-canvas {
- background: white;
+.knopka:hover {
+ color: yellow;
+ border: yellow;
 }
