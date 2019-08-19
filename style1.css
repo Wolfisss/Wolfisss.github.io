@@ -1,8 +1,9 @@
 body {
  background: black;
+ width: 320;
 }
 #d1 {
- background: white;
- height: 500px;
- width: 500px;
+ margin-top: 50px;
+ width: 320px;
+ height: 480px;
 }
