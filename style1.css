@@ -1,5 +1,5 @@
 body {
- background: black;
+ background: #000000;
 }
 .knopka {
  width: 100px;
@@ -18,4 +18,8 @@ body {
  background: gray;
  border: 2px solid yellow;
  border-radius: 8px;
+}
+p {
+ margin-top: auto;
+ margin-left: auto;
 }
