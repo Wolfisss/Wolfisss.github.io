@@ -1,10 +1,11 @@
 body {
+ margin: 0;
  color: yellow;
  background: black;
  width: 320;
 }
 #d1 {
- margin-top: 50px;
+ margin: 50px;
  width: 320px;
- height: 480px;
+ height: 40px;
 }
