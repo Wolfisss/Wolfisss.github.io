@@ -6,6 +6,7 @@ body {
  height: 50px;
  margin: 20px;
  color: white;
+ text-align: centre;
  background: gray;
  border: 2px solid white;
  border-radius: 8px;
@@ -15,11 +16,11 @@ body {
  height: 50px;
  margin: 20px;
  color: yellow;
+ text-align: centre;
  background: gray;
  border: 2px solid yellow;
  border-radius: 8px;
 }
 p {
- margin-top: auto;
- margin-left: auto;
+ margin-top: 50%;
 }
