@@ -2,7 +2,9 @@ body {
  background: #000000;
 }
 .txtcenter {
- margin: 20%;
+ font-size: 20px;
+ text-align: center;
+ margin-top: 15px;
 }
 .knopka {
  width: 100px;
