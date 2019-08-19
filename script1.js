@@ -1,4 +1,4 @@
-function f1(event){
+function f1(){
  alert("hello");
 }
-document.body.addEventListener("click",f1);
+document.body.onclick=f1;
