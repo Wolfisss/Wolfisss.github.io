@@ -1,4 +1,4 @@
 function f1(event){
  alert("hello");
 }
-document.body.addEventListener("load",f1(event));
+document.body.addEventListener("click",f1(event));
