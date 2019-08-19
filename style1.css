@@ -4,6 +4,7 @@ body {
  background: black;
 }
 #d1 {
+ text-align: center;
  background: gray;
  margin: 50px;
  width: 220px;
