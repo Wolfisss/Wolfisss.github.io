@@ -6,7 +6,7 @@ body {
  height: 50px;
  margin: 20px;
  color: white;
- text-align: centre;
+ text-align: center;
  background: gray;
  border: 2px solid white;
  border-radius: 8px;
@@ -16,7 +16,7 @@ body {
  height: 50px;
  margin: 20px;
  color: yellow;
- text-align: centre;
+ text-align: center;
  background: gray;
  border: 2px solid yellow;
  border-radius: 8px;
