@@ -1,5 +1,2 @@
-var f2 = function(){alert("hello");}
-function f1(){
- alert("hello");
-}
-document.body.onclick = f2;
+let f1 = function() {alert("hello");}
+document.body.addEventListener("click", f1);
