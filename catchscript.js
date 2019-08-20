@@ -8,5 +8,5 @@ function gStart(){
      miss = 0,
      level = 1;
  let divAll = document.querySelectorAll("div");
- divall[0].textContent = "catch: " + catch.toString();
+ divall[0].textContent = "cats: " + cats.toString();
 }
