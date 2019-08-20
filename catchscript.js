@@ -12,6 +12,9 @@ function gStart(){
  p3.textContent = "level: " + level.toString();
  var canv = document.createElement("canvas");
  canv.style.background = white;
+ canv.style.width = "668px";
+ canv.style.height = "558px";
+ canv.style.borderRadius = "8px";
  md.appendChild(canv);
  cx = canv.getContext("2d");
 }
