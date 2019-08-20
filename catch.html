@@ -6,10 +6,18 @@
   </title>
  </head>
  <body bgcolor = purple> 
-  <p style="text-align: center">
-    <img src="ani.png" 
-    style="position: relative"
-    onclick="
+  <script>
+   var ima = document.createElement("img");
+   ima.style.width = "50px";
+   ima.style.height = "50px;
+   ima.style.position = "relative";  
+   ima.src = "ani.png";
+  </script>
+  <p style="text-align: center"></p>
+  <script>
+   var pp = document.querySelector("p");
+   pp.appendChild(ima);
+   ima.onclick="
  let bb = document.querySelector('body');
  bb.style.backgroundColor = randCol();
  function randCol(){
@@ -19,9 +27,7 @@
   return '#' + r.toString(16) +
    g.toString(16) + b.toString(16);
  }
-"/>
-  </p>
-<script>
+";
  var cat = document.querySelector("img");
  var angle = 0; lastTime = null;
  function animate(time){
