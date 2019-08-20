@@ -1,11 +1,9 @@
 body {
  background: purple;
 }
-div {
- border: 2px solid yellow;
- border-radius: 8px;
-}
 div.knopka {
+ border: 2px solid yellow;
+ border-radius: 8px; 
  background: gray;
  height: 50px;
  color: yellow;
