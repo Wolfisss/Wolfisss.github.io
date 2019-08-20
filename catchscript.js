@@ -14,7 +14,6 @@ function gStart(){
  canv.style.background = white;
  canv.style.width = "668px";
  canv.style.height = "558px";
- canv.style.borderRadius = "8px";
  md.appendChild(canv);
  cx = canv.getContext("2d");
 }
