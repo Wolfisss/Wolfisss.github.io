@@ -1,0 +1,16 @@
+body {
+ background: purple;
+}
+div {
+ border: 2px solid white;
+ border-radius: 8px;
+}
+div.knopka {
+ background: gray;
+ height: 50px;
+ text-align: center;
+}
+div.text {
+ font-size: 14px;
+ margin: 18px;
+}
