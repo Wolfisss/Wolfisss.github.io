@@ -5,38 +5,6 @@
    Catch the cats
   </title>
  </head>
- <body bgcolor = purple> 
-  <script>
-   var ima = document.createElement("img");
-   ima.style.position = "relative";  
-   ima.src = "ani.png";
-  </script>
-  <p style="text-align: center"></p>
-  <script>
-   var pp = document.querySelector("p");
-   pp.appendChild(ima);
-   ima.addEventListener("click", f);
- function f(){
- let bb = document.querySelector('body');
- bb.style.backgroundColor = randCol();
- function randCol(){
-  var r = Math.floor(Math.random()*256),
-      g = Math.floor(Math.random()*256),
-      b = Math.floor(Math.random()*256);
-  return '#' + r.toString(16) +
-   g.toString(16) + b.toString(16);}
- }
- var cat = document.querySelector("img");
- var angle = 0; lastTime = null;
- function animate(time){
-  if (lastTime != null)
-   angle += (time - lastTime)*0.001;
-  lastTime = time;
-  cat.style.top = (Math.sin(angle)*100) + "px";
-  cat.style.left = (Math.cos(angle)*200) + "px";
-  requestAnimationFrame(animate);
- }
- requestAnimationFrame(animate);
-</script>
-</body>
+ <body>
+ </body>
 </html>
