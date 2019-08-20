@@ -9,7 +9,7 @@
   <script>
    var ima = document.createElement("img");
    ima.style.width = "50px";
-   ima.style.height = "50px;
+   ima.style.height = "50px";
    ima.style.position = "relative";  
    ima.src = "ani.png";
   </script>
@@ -17,7 +17,8 @@
   <script>
    var pp = document.querySelector("p");
    pp.appendChild(ima);
-   ima.onclick="
+   ima.addEventListener("click", f);
+ function f(){
  let bb = document.querySelector('body');
  bb.style.backgroundColor = randCol();
  function randCol(){
@@ -25,7 +26,8 @@
       g = Math.floor(Math.random()*256),
       b = Math.floor(Math.random()*256);
   return '#' + r.toString(16) +
-   g.toString(16) + b.toString(16);}";
+   g.toString(16) + b.toString(16);}
+ }
  var cat = document.querySelector("img");
  var angle = 0; lastTime = null;
  function animate(time){
