@@ -2,12 +2,13 @@ body {
  background: purple;
 }
 div {
- border: 2px solid white;
+ border: 2px solid yellow;
  border-radius: 8px;
 }
 div.knopka {
  background: gray;
  height: 50px;
+ color: yellow;
  text-align: center;
 }
 p {
