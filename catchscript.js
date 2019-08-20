@@ -10,4 +10,10 @@ function gStart(){
  p1.textContent = "cats: " + cats.toString();
  p2.textContent = "miss: " + miss.toString();
  p3.textContent = "level: " + level.toString();
+ var canv = document.createElement("canvas");
+ canv.style = "background: white;
+               width: 518px;
+               height: 558px;";
+ md.appendChild(canv);
+ cx = canv.getContext("2d");
 }
