@@ -3,6 +3,6 @@ im.addEventListener("click", gStart);
 function gStart(){
  im.style ="display: none";
  var cats = 0, miss = 0, level = 1;
- let divAll = document.querySelectorAll("div");
- divall[0].textContent = "cats: " + cats.toString();
+ var divAll = document.querySelectorAll("div");
+ divall[1].textContent = "cats: " + cats.toString();
 }
