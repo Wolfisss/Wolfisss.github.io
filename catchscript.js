@@ -11,7 +11,8 @@ function gStart(){
  p2.textContent = "miss: " + miss.toString();
  p3.textContent = "level: " + level.toString();
  var canv = document.createElement("canvas");
- canv.style.cssText = 'background-color: white;';
+ canv.style.cssText = 'background-color: white;
+                       width: 500px;';
  md.appendChild(canv);
  cx = canv.getContext("2d");
 }
