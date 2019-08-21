@@ -67,8 +67,8 @@ function gStart(){
      }
      else {
       cx.clearRect(pets[i].x, pets[i].y, 160, 160);
-      if (pets[i].dir == 0) pets[i].x += level;
-      else pets[i].x -= level;
+      if (pets[i].dir == 0) pets[i].x += level + (time - lastTime)*0.001;
+      else pets[i].x -= level + (time - lastTime)*0.001;
       cx.drawImage(im, getCoord(pets[i].pet).x, getCoord(pets[i].pet).y, 160, 160,
                        pets[i].x, pets[i].y, 160, 160);
       if (pets[i].dir == 0 && pets[i].x > 668 ||
