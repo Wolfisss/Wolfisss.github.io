@@ -51,7 +51,7 @@ function gStart(){
    else {
     for (var i = 0; i < 5; i++) {
      if (!pets[i].act) { 
-      if (Math.random() < 0.05) {
+      if (Math.random() < 0.5) {
        pets[i].act = true;
        pets[i].pet = 1 + Math.floor(Math.random()*12);
        pets[i].dir = Math.floor(Math.random()*2);
@@ -65,10 +65,10 @@ function gStart(){
        }
       }
      }
-     else {
+     else for (var i = 0; i < 5; i++){
       cx.clearRect(pets[i].x, pets[i].y, 160, 160);
-      if (pets[i].dir == 0) pets[i].x += level*(time - lastTime)*0.01;
-      else pets[i].x -= level*(time - lastTime)*0.01;
+      if (pets[i].dir == 0) pets[i].x += level*(time - lastTime)*0.02;
+      else pets[i].x -= level*(time - lastTime)*0.02;
       lastTime = time;
       cx.drawImage(im, getCoord(pets[i].pet).x, getCoord(pets[i].pet).y, 160, 160,
                        pets[i].x, pets[i].y, 160, 160);
