@@ -11,10 +11,13 @@ function gStart(){
  p2.textContent = "miss: " + miss.toString();
  p3.textContent = "level: " + level.toString();
  var canv = document.createElement("canvas");
- canv.style = "background: white";
  md.appendChild(canv);
  canv.style.width = "668px";
  canv.style.height = "558px";
  canv.style.borderRadius = "6px";
  cx = canv.getContext("2d");
+ canv.addEventListener("click", f1);
+ function f1(){
+  md.style.background = "red";
+ }
 }
