@@ -31,8 +31,8 @@ function gStart(){
     case 2: return {x: 170, y: 0}; break;
     case 3: return {x: 340, y: 0}; break;
     case 4: return {x: 510, y: 0}; break;
-    case 5: return {x: 170, y: 0}; break;
-    case 6: return {x: 0, y: 170}; break;
+    case 5: return {x: 0, y: 170}; break;
+    case 6: return {x: 0, y: 340}; break;
     case 7: return {x: 0, y: 0}; break;
     case 8: return {x: 170, y: 0}; break;
     case 9: return {x: 340, y: 0}; break;
