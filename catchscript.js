@@ -45,6 +45,8 @@ function gStart(){
     }
    }
  }
+ cx.drawImage(im, getCoord(7).x, getCoord(7).y, 160, 160, 300, 300, 160, 160);
+ pets[0].act = true; pets[0].x = 300; pets[0].y = 300;
  function getCoord(icat) {
    switch (icat) {
     case 1: return {x: 0, y: 0}; break;
