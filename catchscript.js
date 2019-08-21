@@ -46,6 +46,7 @@ function gStart(){
   }
   var lastTime = null;
   var rId = requestAnimationFrame(f2);
+  requestAnimationFrame(f2);
   function f2(time) {
    if (lastTime == null) lastTime = time;
    else {
