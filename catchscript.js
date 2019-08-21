@@ -30,7 +30,7 @@ function gStart(){
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
   for (var i = 0; i < 5; i++) {
-   if (pets[i].act) {
+   if (!pets[i].act) {
     /*if (event.pageX - 100 > pets[i].x)&&(event.pageX - 100 < pets[i].x + 160)&&
        (event.pageY - 160 > pets[i].y)&&(event.pageY - 160 < pets[i].y + 160) */
      cats++;
