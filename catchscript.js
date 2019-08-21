@@ -18,6 +18,6 @@ function gStart(){
  cx = canv.getContext("2d");
  canv.addEventListener("click", f1);
  function f1(){
-  md.style.background = "red";
+  md.style.background = rgb(0,0,0);
  }
 }
