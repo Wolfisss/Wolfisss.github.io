@@ -23,7 +23,7 @@ function gStart(){
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
-  cx.drawImage(im, getCoord(8).x,getCoord(8).y,160,160,
+  cx.drawImage(im, getCoord(9).x,getCoord(9).y,160,160,
    Math.floor(Math.random()*668),Math.floor(Math.random()*558),160,160);
   function getCoord(icat) {
    switch (icat) {
@@ -35,10 +35,10 @@ function gStart(){
     case 6: return {x: 170, y: 190}; break;
     case 7: return {x: 340, y: 190}; break;
     case 8: return {x: 510, y: 190}; break;
-    case 9: return {x: 340, y: 0}; break;
-    case 10: return {x: 0, y: 0}; break;
-    case 11: return {x: 170, y: 0}; break;
-    case 12: return {x: 340, y: 0}; break;
+    case 9: return {x: 0, y: 0}; break;
+    case 10: return {x: 170, y: 390}; break;
+    case 11: return {x: 340, y: 390}; break;
+    case 12: return {x: 510, y: 390}; break;
    }
   }
  }
