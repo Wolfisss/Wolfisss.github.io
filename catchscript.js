@@ -22,14 +22,14 @@ function gStart(){
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0}];
-/* canv.addEventListener("click", f1);
+ canv.addEventListener("click", f1);
  function f1(event){
   let r = Math.floor(Math.random()*256);
   let g = Math.floor(Math.random()*256);
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
-  for (var i = 0; i < 5; i++)
+ /* for (var i = 0; i < 5; i++)
    if (pets[i].act) {
     if (event.pageX > pets[i].x)&&(event.pageX < pets[i].x + 160)&&
        (event.pageY > pets[i].y)&&(event.pageY < pets[i].y + 160) {
@@ -42,8 +42,8 @@ function gStart(){
      level = 1 + Math.floor(cats / 10);
      p3.textContent = "level: " + level.toString();
     }
-   }
-  } */
+   }*/
+  } 
  cx.drawImage(im, getCoord(7).x, getCoord(7).y, 160, 160, 300, 300, 160, 160);
  pets[0].act = true; pets[0].x = 300; pets[0].y = 300;
  function getCoord(icat) {
