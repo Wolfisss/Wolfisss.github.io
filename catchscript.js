@@ -2,7 +2,7 @@ let im = document.querySelector("img");
 im.addEventListener("click", gStart);
 function gStart(){
  im.style = "display: none";
- var cats = 1, miss = 0, level = 1;
+ var cats = 0, miss = 0, level = 1;
  var p1 = document.getElementById("p1");
  var p2 = document.getElementById("p2");
  var p3 = document.getElementById("p3");
@@ -23,6 +23,7 @@ function gStart(){
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
-  cx.drawImage(im, 0,0,150,150,300,300,150,150);
+  cx.drawImage(im, 0,0,150,150,
+   Math.floor(Math.random()*668),Math.floor(Math.random()*558),150,150);
  }
 }
