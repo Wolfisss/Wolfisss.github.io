@@ -43,10 +43,9 @@ function gStart(){
      p3.textContent = "level: " + level.toString();
     }
    }
-  }
-  var lastTime = null;
-  var rId = requestAnimationFrame(f2);
-  requestAnimationFrame(f2);
+  } 
+ } 
+ var lastTime = null;
   function f2(time) {
    if (lastTime == null) lastTime = time;
    else {
@@ -83,7 +82,8 @@ function gStart(){
     else requestAnimationFrame(f2);
    }
   }
- } 
+ var rId = requestAnimationFrame(f2);
+ requestAnimationFrame(f2);
  function getCoord(icat) {
    switch (icat) {
     case 1: return {x: 0, y: 0}; break;
