@@ -56,7 +56,7 @@ function gStart(){
    cancelAnimationFrame(rId);
    cx.clearRect(0,0,668,558);
   }
-  else requestAnimationFrame;
+  else requestAnimationFrame(f2);
  }
  function getCoord(icat) {
    switch (icat) {
