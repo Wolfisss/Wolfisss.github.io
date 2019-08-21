@@ -26,9 +26,4 @@ function gStart(){
   let xx = Math.floor(Math.random()*668);
   let yy = Math.floor(Math.random()*558);
   cx.drawImage(im, 0, 0, 150, 150, xx, yy, 150, 150);
- 
- function getCoord(inum) {
-  if (inum == 1)
-   return {x: 0, y: 0};
- }
 }
