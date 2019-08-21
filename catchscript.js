@@ -22,7 +22,7 @@ function gStart(){
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0}];
- cx.drawImage(im, 0, 0, 160, 160, 0, 0, 160, 160););
+ cx.drawImage(im, 0, 0, 160, 160, 0, 0, 160, 160);
  canv.addEventListener("click", f1);
  function f1(event){
   let r = Math.floor(Math.random()*256);
