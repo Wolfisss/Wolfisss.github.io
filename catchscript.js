@@ -31,13 +31,10 @@ function gStart(){
    g.toString(16) + b.toString(16);
   for (var i = 0; i < 5; i++) {
    if (pets[i].act) {
-   /* if (event.pageX - 100 > pets[i].x)&&(event.pageX - 100 < pets[i].x + 160)&&
-       (event.pageY - 160 > pets[i].y)&&(event.pageY - 160 < pets[i].y + 160) {
-     pets[i].act = false;
-     cx.clearRect(pets[i].x, pets[i].y, 160, 160);
+    /*if (event.pageX - 100 > pets[i].x)&&(event.pageX - 100 < pets[i].x + 160)&&
+       (event.pageY - 160 > pets[i].y)&&(event.pageY - 160 < pets[i].y + 160) */
      cats++;
      p1.textContent = "catch: " + cats.toString();
-    } */
     if (cats % 10 == 0) {
      level = 1 + Math.floor(cats / 10);
      p3.textContent = "level: " + level.toString();
