@@ -46,6 +46,7 @@ function gStart(){
   }
   var lastTime = null;
   var rId = requestAnimationFrame(f2);
+  requestAnimationFrame(f2);
   function f2(time) {
    if (lastTime == null) lastTime = time;
    else {
@@ -66,7 +67,7 @@ function gStart(){
       }
      }
      else {
-      clearRect(pets[i].x, pets[i].y, 160, 160);
+      cx.clearRect(pets[i].x, pets[i].y, 160, 160);
       if (pets[i].dir == 0) pets[i].x += level*(time - lastTime);
       else pets[i].x -= level*(time - lastTime);
       cx.drawImage(im, getCoord(pets[i].pet).x, getCoord(pets[i].pet).y, 160, 160,
