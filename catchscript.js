@@ -18,6 +18,10 @@ function gStart(){
  cx = canv.getContext("2d");
  canv.addEventListener("click", f1);
  function f1(){
-  md.style.background = rgb(0,0,0);
+  let r = Math.floor(Math.random()*256);
+  let g = Math.floor(Math.random()*256);
+  let b = Math.floor(Math.random()*256);
+  md.style.background = "#" + r.toString(16) +
+   r.toString(16) + r.toString(16);
  }
 }
