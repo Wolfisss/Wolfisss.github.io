@@ -72,7 +72,7 @@ function gStart(){
       cx.drawImage(im, getCoord(pets[i].pet).x, getCoord(pets[i].pet).y, 160, 160,
                        pets[i].x, pets[i].y, 160, 160);
       if (pets[i].dir == 0 && pets[i].x > 668 ||
-          pets[i] dir == 1 && pets[i].x < -160) {
+          pets[i].dir == 1 && pets[i].x < -160) {
        pets[i].act = false;
        p2.textContent = "miss: " + miss.toString();
       }
