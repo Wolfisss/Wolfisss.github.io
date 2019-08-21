@@ -46,13 +46,12 @@ function gStart(){
   }
   var lastTime = null;
   var rId = requestAnimationFrame(f2);
-  requestAnimationFrame(f2);
   function f2(time) {
    if (lastTime == null) lastTime = time;
    else {
     for (var i = 0; i < 5; i++) {
      if (!pets[i].act) { 
-      if (Math.random() < 1) {
+      if (Math.random() < 0.05) {
        pets[i].act = true;
        pets[i].pet = 1 + Math.floor(Math.random()*12);
        pets[i].dir = Math.floor(Math.random()*2);
@@ -68,8 +67,8 @@ function gStart(){
      }
      else {
       cx.clearRect(pets[i].x, pets[i].y, 160, 160);
-      if (pets[i].dir == 0) pets[i].x += level*(time - lastTime)*0.001;
-      else pets[i].x -= level*(time - lastTime)*0.001;
+      if (pets[i].dir == 0) pets[i].x += level;
+      else pets[i].x -= level;
       cx.drawImage(im, getCoord(pets[i].pet).x, getCoord(pets[i].pet).y, 160, 160,
                        pets[i].x, pets[i].y, 160, 160);
       if (pets[i].dir == 0 && pets[i].x > 668 ||
