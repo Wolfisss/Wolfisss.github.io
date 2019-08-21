@@ -23,7 +23,7 @@ function gStart(){
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
-  cx.drawImage(im, getCoord(9).x,getCoord(9).y,160,160,
+  cx.drawImage(im, getCoord(10).x,getCoord(10).y,160,160,
    Math.floor(Math.random()*668),Math.floor(Math.random()*558),160,160);
   function getCoord(icat) {
    switch (icat) {
