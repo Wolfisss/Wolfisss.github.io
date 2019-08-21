@@ -43,8 +43,7 @@ function gStart(){
      level = 1 + Math.floor(cats / 10);
      p3.textContent = "level: " + level.toString();
     }
-   }
- }
+  }
  cx.drawImage(im, getCoord(7).x, getCoord(7).y, 160, 160, 300, 300, 160, 160);
  pets[0].act = true; pets[0].x = 300; pets[0].y = 300;
  function getCoord(icat) {
