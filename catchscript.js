@@ -7,7 +7,7 @@ function gStart(){
  var p2 = document.getElementById("p2");
  var p3 = document.getElementById("p3");
  var md = document.getElementById("mdiv");
- p1.textContent = "cats: " + cats.toString();
+ p1.textContent = "catch: " + cats.toString();
  p2.textContent = "miss: " + miss.toString();
  p3.textContent = "level: " + level.toString();
  var canv = document.createElement("canvas");
