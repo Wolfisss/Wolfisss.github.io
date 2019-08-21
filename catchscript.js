@@ -23,5 +23,12 @@ function gStart(){
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
+  cx.drawImage(im, getCoord(1).x, getCoord(1).y,
+   getCoord(1).a, getCoord(1).b,
+   Math.floor(Math.random()*500), Math.floor(Math.random()*500, 150, 150);
+ }
+ function getCoord(inum) {
+  if (inum == 1)
+   return {x: 0, y: 0, a: 150, b: 150};
  }
 }
