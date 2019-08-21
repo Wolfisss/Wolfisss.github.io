@@ -32,8 +32,8 @@ function gStart(){
    g.toString(16) + b.toString(16);
   for (var i = 0; i < 5; i++) {
    if (pets[i].act) {
-    if (event.pageX + 10 > pets[i].x && event.pageX + 10 < pets[i].x + 160 &&
-        event.pageY + 50 > pets[i].y && event.pageY + 50 < pets[i].y + 160) {
+    if (event.pageX - 10 > pets[i].x && event.pageX - 10 < pets[i].x + 160 &&
+        event.pageY - 50 > pets[i].y && event.pageY - 50 < pets[i].y + 160) {
      pets[i].act = false;
      cx.clearRect(pets[i].x, pets[i].y, 160, 160);
      cats++;
