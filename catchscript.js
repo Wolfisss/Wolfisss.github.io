@@ -23,10 +23,11 @@ function gStart(){
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
-  cx.drawImage(im, 0, 0);
+  cx.drawImage(im, 0, 0, 150, 150,
+                   0, 0, 150, 150);
  }
  function getCoord(inum) {
   if (inum == 1)
-   return {x: 0, y: 0, a: 150, b: 150};
+   return {x: 0, y: 0};
  }
 }
