@@ -16,6 +16,13 @@ function gStart(){
  canv.height = 558;
  canv.style.borderRadius = "6px";
  cx = canv.getContext("2d");
+ var pets = [
+  {act: false, pet: 1, dir: 1, x: 0, y: 0},
+  {act: false, pet: 1, dir: 1, x: 0, y: 0},
+  {act: false, pet: 1, dir: 1, x: 0, y: 0},
+  {act: false, pet: 1, dir: 1, x: 0, y: 0},
+  {act: false, pet: 1, dir: 1, x: 0, y: 0}
+ ]
  canv.addEventListener("click", f1);
  function f1(){
   let r = Math.floor(Math.random()*256);
@@ -23,9 +30,8 @@ function gStart(){
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
-  cx.drawImage(im, getCoord(12).x,getCoord(12).y,160,160,
-   Math.floor(Math.random()*668),Math.floor(Math.random()*558),160,160);
-  function getCoord(icat) {
+ }
+ function getCoord(icat) {
    switch (icat) {
     case 1: return {x: 0, y: 0}; break;
     case 2: return {x: 170, y: 0}; break;
@@ -40,6 +46,5 @@ function gStart(){
     case 11: return {x: 340, y: 390}; break;
     case 12: return {x: 510, y: 390}; break;
    }
-  }
  }
 }
