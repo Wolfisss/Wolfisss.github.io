@@ -22,7 +22,7 @@ function gStart(){
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0}
- ]
+ ];
  canv.addEventListener("click", f1);
  function f1(){
   let r = Math.floor(Math.random()*256);
@@ -30,6 +30,10 @@ function gStart(){
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
+  for (var i = 0; i < 5; i++)
+   if (pets[i].act) {
+    
+   }
  }
  function getCoord(icat) {
    switch (icat) {
