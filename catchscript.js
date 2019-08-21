@@ -47,12 +47,13 @@ function gStart(){
  } 
  var lastTime = null;
  var rId = requestAnimationFrame(f2);
- requestAnimationFrame(f2);
  function f2(time) {
   if (lastTime == null) lastTime = time;
   /*--*/
+  cx.drawImage(im,0,0,160,160,Math.floor(Math.random()*300),0,160,160);
+  lastTime = time;
   if (cats < miss) {
-   canselAnimationFrame(rId);
+   cancelAnimationFrame(rId);
    cx.clearRect(0,0,668,558);
   }
   else requestAnimationFrame;
