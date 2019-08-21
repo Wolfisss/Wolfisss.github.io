@@ -51,7 +51,7 @@ function gStart(){
    else {
     for (var i = 0; i < 5; i++) {
      if (!pets[i].act) { 
-      if (Math.random() < 0.5) {
+      if (Math.random() < 1) {
        pets[i].act = true;
        pets[i].pet = 1 + Math.floor(Math.random()*12);
        pets[i].dir = Math.floor(Math.random()*2);
