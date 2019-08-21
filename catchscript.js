@@ -24,7 +24,7 @@ function gStart(){
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
    for (var i = 1; i<7; i++)
-  cx.drawImage(im, getCoord(1).x,getCoord(1).y,160,160,
+  cx.drawImage(im, getCoord(i).x,getCoord(i).y,160,160,
    Math.floor(Math.random()*668),Math.floor(Math.random()*558),160,160);
   function getCoord(icat) {
    switch (icat) {
