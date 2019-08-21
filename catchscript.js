@@ -12,8 +12,8 @@ function gStart(){
  p3.textContent = "level: " + level.toString();
  var canv = document.createElement("canvas");
  md.appendChild(canv);
- canv.style.width = "668px";
- canv.style.height = "558px";
+ canv.width = 668;
+ canv.height = 558;
  canv.style.borderRadius = "6px";
  cx = canv.getContext("2d");
  canv.addEventListener("click", f1);
