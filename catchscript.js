@@ -22,7 +22,6 @@ function gStart(){
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0}];
- cx.drawImage(im, 0, 0, 160, 160, 0, 0, 160, 160);
  canv.addEventListener("click", f1);
  function f1(event){
   for (var i = 0; i < 5; i++) {
@@ -43,6 +42,44 @@ function gStart(){
      level = 1 + Math.floor(cats / 10);
      p3.textContent = "level: " + level.toString();
     }
+   }
+  }
+  var lastTime = null;
+  /* var rId = requestAnimationFrame(f2);*/
+  function f2(time) {
+   if (lastTime == null) lastTime = time;
+   else {
+    for (var i = 0; i < 5; i++) {
+     if (!pets[i].act) { 
+      if (Math.random() < 0.05) {
+       pets[i].act = true;
+       pets[i].pet = 1 + Math.floor(Math.random()*12);
+       pets[i].dir = Math.floor(Math.random()*2);
+       if (pets[i].dir == 0) {
+        pets[i].x = -160;
+        pets[i].y = Math.floor(Math.random()*398);
+       } 
+       else {
+        pets[i].x = 668;
+        pets[i].y = Math.floor(Math.random()*398);
+       }
+      }
+     }
+     else {
+      clearRect(pets[i].x, pets[i].y, 160, 160);
+      if (pets[i].dir == 0) pets[i].x += level;
+      else pets[i].x -= level;
+      cx.drawImage(im, getCoord(pets[i].pet).x, getCoord(pets[i].pet).y, 160, 160,
+                       pets[i].x, pets[i].y, 160, 160);
+      if (pets[i].dir == 0 && pets[i].x > 668 ||
+          pets[i] dir == 1 && pets[i].x < -160) {
+       pets[i].act = false;
+       p2.textContent = "miss: " + miss.toString();
+      }
+     }
+    }
+    if (cats < miss) cancelAnimationFrame(rId); 
+    else requestAnimationFrame(f2);
    }
   }
  } 
