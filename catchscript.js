@@ -28,7 +28,7 @@ function gStart(){
   function getCoord(icat) {
    switch (icat) {
     case 1: return {x: 0, y: 0}; break;
-    case 2: return {x: 150, y: 0}; break;
+    case 2: return {x: 160, y: 0}; break;
    }
   }
  }
