@@ -23,7 +23,7 @@ function gStart(){
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
-  let xx = Math.floor(Math.random()*668);
-  let yy = Math.floor(Math.random()*558);
+  let xx = 300;
+  let yy = 300;
   cx.drawImage(im, 0, 0, 150, 150, xx, yy, 150, 150);
 }
