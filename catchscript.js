@@ -35,9 +35,13 @@ function gStart(){
     if (event.pageX > pets[i].x)&&(event.pageX < pets[i].x + 160)&&
        (event.pageY > pets[i].y)&&(event.pageY < pets[i].y + 160) {
      pets[i].act = false;
-     cx.clearRect(pets[i].x, pets[i].y, 160,160);
+     cx.clearRect(pets[i].x, pets[i].y, 160, 160);
      cats++;
      p1.textContent = "catch: " + cats.toString();
+    }
+    if (cats % 10 == 0) {
+     level = 1 + Math.floor(cats / 10);
+     p3.textContent = "level: " + level.toString();
     }
    }
  }
