@@ -29,6 +29,7 @@ function gStart(){
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
+  cx.drawImage(im, getCoord(7).x, getCoord(7).y, 160, 160, event.pageX, event.pageY, 160, 160);
  /* for (var i = 0; i < 5; i++)
    if (pets[i].act) {
     if (event.pageX > pets[i].x)&&(event.pageX < pets[i].x + 160)&&
@@ -44,7 +45,6 @@ function gStart(){
     }
    }*/
   } 
- cx.drawImage(im, getCoord(7).x, getCoord(7).y, 160, 160, event.pageX, event.pageY, 160, 160);
  function getCoord(icat) {
    switch (icat) {
     case 1: return {x: 0, y: 0}; break;
