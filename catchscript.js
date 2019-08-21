@@ -23,4 +23,6 @@ function gStart(){
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
+  cx.drawImage(im, 0,0,150,150,300,300,150,150);
+ }
 }
