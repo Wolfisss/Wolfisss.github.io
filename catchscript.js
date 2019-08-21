@@ -17,7 +17,7 @@ function gStart(){
  canv.style.borderRadius = "6px";
  cx = canv.getContext("2d");
  var pets = [
-  {act: true, pet: 1, dir: 1, x: 0, y: 0},
+  {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
@@ -25,15 +25,15 @@ function gStart(){
  cx.drawImage(im, 0, 0, 160, 160, 0, 0, 160, 160);
  canv.addEventListener("click", f1);
  function f1(event){
-  let r = Math.floor(Math.random()*256);
-  let g = Math.floor(Math.random()*256);
-  let b = Math.floor(Math.random()*256);
-  md.style.background = "#" + r.toString(16) +
-   g.toString(16) + b.toString(16);
   for (var i = 0; i < 5; i++) {
    if (pets[i].act) {
     if (event.pageX - 10 > pets[i].x && event.pageX - 10 < pets[i].x + 160 &&
         event.pageY - 50 > pets[i].y && event.pageY - 50 < pets[i].y + 160) {
+     let r = Math.floor(Math.random()*256);
+     let g = Math.floor(Math.random()*256);
+     let b = Math.floor(Math.random()*256);
+     md.style.background = "#" + r.toString(16) +
+      g.toString(16) + b.toString(16);
      pets[i].act = false;
      cx.clearRect(pets[i].x, pets[i].y, 160, 160);
      cats++;
