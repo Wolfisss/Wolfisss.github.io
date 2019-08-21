@@ -46,48 +46,17 @@ function gStart(){
   } 
  } 
  var lastTime = null;
-  function f2(time) {
-   if (lastTime == null) lastTime = time;
-   else {
-    for (var i = 0; i < 5; i++) {
-     if (!pets[i].act) { 
-      if (Math.random() < 1) {
-       pets[i].act = true;
-       pets[i].pet = 1 + Math.floor(Math.random()*12);
-       pets[i].dir = Math.floor(Math.random()*2);
-       if (pets[i].dir == 0) {
-        pets[i].x = -160;
-        pets[i].y = Math.floor(Math.random()*398);
-       } 
-       else {
-        pets[i].x = 668;
-        pets[i].y = Math.floor(Math.random()*398);
-       }
-      }
-     }
-     else { 
-      for (var i = 0; i < 5; i++){
-      cx.clearRect(pets[i].x, pets[i].y, 160, 160);
-      if (pets[i].dir == 0) pets[i].x += level*(time - lastTime)*0.02;
-      else pets[i].x -= level*(time - lastTime)*0.02;
-      cx.drawImage(im, getCoord(pets[i].pet).x, getCoord(pets[i].pet).y, 160, 160,
-                       pets[i].x, pets[i].y, 160, 160);
-      }
-      if (pets[i].dir == 0 && pets[i].x > 668 ||
-          pets[i].dir == 1 && pets[i].x < -160) {
-       pets[i].act = false;
-       miss++;
-       p2.textContent = "miss: " + miss.toString();
-      }
-     lastTime = time;
-     }
-    }
-    if (cats < miss) cancelAnimationFrame(rId); 
-    else requestAnimationFrame(f2);
-   }
-  }
  var rId = requestAnimationFrame(f2);
  requestAnimationFrame(f2);
+ function f2(time) {
+  if (lastTime == null) lastTime = time;
+  /*--*/
+  if (cats < miss) {
+   canselAnimationFrame(rId);
+   cx.clearRect(0,0,668,558);
+  }
+  else requestAnimationFrame;
+ }
  function getCoord(icat) {
    switch (icat) {
     case 1: return {x: 0, y: 0}; break;
