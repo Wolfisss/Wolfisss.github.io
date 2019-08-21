@@ -79,9 +79,9 @@ function gStart(){
        miss++;
        p2.textContent = "miss: " + miss.toString();
       }
+     lastTime = time;
      }
     }
-    lastTime = time;
     if (cats < miss) cancelAnimationFrame(rId); 
     else requestAnimationFrame(f2);
    }
