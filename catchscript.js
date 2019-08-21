@@ -29,11 +29,11 @@ function gStart(){
   let b = Math.floor(Math.random()*256);
   md.style.background = "#" + r.toString(16) +
    g.toString(16) + b.toString(16);
-  cx.drawImage(im, getCoord(7).x, getCoord(7).y, 160, 160, event.pageX - 100, event.pageY - 160, 160, 160);
- /* for (var i = 0; i < 5; i++)
-   if (pets[i].act) {
-    if (event.pageX > pets[i].x)&&(event.pageX < pets[i].x + 160)&&
-       (event.pageY > pets[i].y)&&(event.pageY < pets[i].y + 160) {
+  for (var i = 0; i < 5; i++) {
+   if (pets[i].act) cx.drawImage(im, 0, 0);
+  /* if (pets[i].act) {
+    if (event.pageX - 100 > pets[i].x)&&(event.pageX - 100 < pets[i].x + 160)&&
+       (event.pageY - 160 > pets[i].y)&&(event.pageY - 160 < pets[i].y + 160) {
      pets[i].act = false;
      cx.clearRect(pets[i].x, pets[i].y, 160, 160);
      cats++;
@@ -44,7 +44,8 @@ function gStart(){
      p3.textContent = "level: " + level.toString();
     }
    }*/
-  } 
+  }
+ } 
  function getCoord(icat) {
    switch (icat) {
     case 1: return {x: 0, y: 0}; break;
