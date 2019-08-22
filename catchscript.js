@@ -1,8 +1,8 @@
 let im = document.querySelector("img");
 im.addEventListener("click", gStart);
+var cats = 0, miss = 0, level = 1;
 function gStart(){
  im.style = "display: none";
- var cats = 0, miss = 0, level = 1;
  var p1 = document.getElementById("p1");
  var p2 = document.getElementById("p2");
  var p3 = document.getElementById("p3");
