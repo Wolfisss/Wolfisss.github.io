@@ -50,13 +50,13 @@ function gStart(){
  function f2(time) {
   if (lastTime == null) lastTime = time;
   /*--*/ for (var i = 0; i < 5; i++){
-           if (!pets[i].act && (Math.random() < 1)){
+           if (!pets[i].act && (Math.random() < 0.5)){
              pets[i].act = true;
              pets[i].pet = Math.floor(Math.random()*12) + 1;
              pets[i].dir = Math.floor(Math.random()*2);
              pets[i].y = Math.floor(Math.random()*398);
-             if (pets[i].dir == 0) pets[i].x = 0;
-             else pets[i].x = 508;
+             if (pets[i].dir == 0) pets[i].x = -160;
+             else pets[i].x = 668;
            }
          }
   /*--*/ for (var i = 0; i < 5; i++){
