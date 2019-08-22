@@ -74,7 +74,7 @@ function gStart(){
              miss++;
              p2.textContent = "miss: " + miss.toString();
              pets[i].act = false;
-             cx.clearRect(pets[i].x, pdts[i].y, 160, 160);
+             cx.clearRect(pets[i].x, pets[i].y, 160, 160);
            }
          }
   lastTime = time;
