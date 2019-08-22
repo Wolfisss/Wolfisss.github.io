@@ -37,13 +37,14 @@ function gStart(){
      cx.clearRect(pets[i].x, pets[i].y, 160, 160);
      cats++;
      p1.textContent = "catch: " + cats.toString();
-    }
-    if (cats % 10 == 0) {
-     level = 1 + Math.floor(cats / 10);
-     p3.textContent = "level: " + level.toString();
-    }
+     break;
+    } 
    }
   } 
+  if (cats % 10 == 0) {
+    level = 1 + Math.floor(cats / 10);
+    p3.textContent = "level: " + level.toString();
+  }
  } 
  var lastTime = null;
  var rId = requestAnimationFrame(f2);
