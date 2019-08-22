@@ -62,8 +62,8 @@ function gStart(){
          for (var i = 0; i < 5; i++){
            if (pets[i].act){
              cx.clearRect(pets[i].x, pets[i].y, 160, 160);
-             if (pets[i].dir == 0) pets[i].x += (time - lastTime)*0.1*level;
-             else pets[i].x -= (time - lastTime)*0.1*level;
+             if (pets[i].dir == 0) pets[i].x += (time - lastTime)*0.1*(1 + 0.3*level);
+             else pets[i].x -= (time - lastTime)*0.1*(1 + 0.3*level);
              cx.drawImage(im, getCoord(pets[i].pet).x, getCoord(pets[i].pet).y, 160, 160,
                               pets[i].x, pets[i].y, 160, 160);
            }
@@ -71,7 +71,7 @@ function gStart(){
          for (var i = 0; i < 5; i++){
            if ((pets[i].dir == 0) && (pets[i].x > 667) ||
                (pets[i].dir == 1) && (pets[i].x < -159)){
-             miss++;
+             if (pets[i].act) miss++;
              p2.textContent = "miss: " + miss.toString();
              pets[i].act = false;
              cx.clearRect(pets[i].x, pets[i].y, 160, 160);
@@ -81,6 +81,8 @@ function gStart(){
   if (cats < miss) {
    cx.clearRect(0,0,668,558);
    cancelAnimationFrame(rId);
+   p1.textContent = "catch: " + cats.toString();
+   p2.textContent = "miss: " + miss.toString();
   }
   else requestAnimationFrame(f2);
  }
