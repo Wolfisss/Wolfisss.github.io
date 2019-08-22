@@ -60,8 +60,11 @@ function gStart(){
            }
          }
          for (var i = 0; i < 5; i++){
-           if (pets[i].act){
+           if (pets[i].act) 
              cx.clearRect(pets[i].x, pets[i].y, 160, 160);
+         }
+         for (var i = 0; i < 5; i++){
+           if (pets[i].act){
              if (pets[i].dir == 0) pets[i].x += (time - lastTime)*0.1*(1 + 0.3*level);
              else pets[i].x -= (time - lastTime)*0.1*(1 + 0.3*level);
              cx.drawImage(im, getCoord(pets[i].pet).x, getCoord(pets[i].pet).y, 160, 160,
