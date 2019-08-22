@@ -68,15 +68,15 @@ function gStart(){
                               pets[i].x, pets[i].y, 160, 160);
            }
          }
-  /*--*/ for (var i = 0; i < 5; i++){
+  /* for (var i = 0; i < 5; i++){
            if ((pets[i].dir == 0) && (pets[i].x > 667) ||
                (pets[i].dir == 1) && (pets[i].x < -159)){
              miss++;
              p2.textContent = "miss: " + miss.toString();
              pets[i].act = false;
-            // cx.clearRect(pets[i].x, pets[i].y, 160, 160);
+             cx.clearRect(pets[i].x, pets[i].y, 160, 160);
            }
-         }
+         }*/
   lastTime = time;
   if (cats < miss) {
    cancelAnimationFrame(rId);
