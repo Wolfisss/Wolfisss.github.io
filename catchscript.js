@@ -49,8 +49,16 @@ function gStart(){
  var rId = requestAnimationFrame(f2);
  function f2(time) {
   if (lastTime == null) lastTime = time;
-  /*--*/
-  cx.drawImage(im,0,0,160,160,Math.floor(Math.random()*300),0,160,160);
+  /*--*/ for (var i = 0; i < 5; i++){
+           if (!pets[i].act && Math.random < 0.5){
+             pets[i].act = true;
+             pets[i].pet = Math.floor(Math.random()*12) + 1;
+             pets[i].dir = Math.floor(Math.random()*2);
+             pets[i].y = Math.floor(Math.random()*398);
+             if (pets[i].dir == 0) pets[i].x = -160;
+             else pets[i].x = 668;
+           }
+         }
   lastTime = time;
   if (cats < miss) {
    cancelAnimationFrame(rId);
