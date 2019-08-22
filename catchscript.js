@@ -22,7 +22,7 @@ function gStart(){
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0},
   {act: false, pet: 1, dir: 1, x: 0, y: 0}];
- canv.addEventListener("click", f1);
+ canv.addEventListener("mousedown", f1);
  function f1(event){
   for (var i = 0; i < 5; i++) {
    if (pets[i].act) {
