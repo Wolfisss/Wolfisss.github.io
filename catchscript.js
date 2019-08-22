@@ -59,6 +59,24 @@ function gStart(){
              else pets[i].x = 668;
            }
          }
+  /*--*/ for (var i = 0; i < 5; i++){
+           if (pets[i].act){
+             cx.clearRect(pets[i].x, pets[i].y, 160, 160);
+             if (pets[i].dir == 0) pets[i].x += (time - lastTime)*0.02*level;
+             else pets[i].x -= (time - lastTime)*0.02*level;
+             cx.drawImage(im, getCoord(pets[i].pet).x, getCoord(pets[i].pet).y, 160, 160,
+                              pets[i].x, pets[i].y, 160, 160);
+           }
+         }
+  /*--*/ for (var i = 0; i < 5; i++){
+           if (pets[i].dir == 0 && pets[i].x > 667 ||
+               pets[i].dir == 1 && pets[i].x < -159){
+             miss++;
+             p2.textContent = "miss: " + miss.toString();
+             pets[i].act = false;
+             cx.clearRect(pets[i].x, pdts[i].y, 160, 160);
+           }
+         }
   lastTime = time;
   if (cats < miss) {
    cancelAnimationFrame(rId);
