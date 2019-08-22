@@ -26,8 +26,8 @@ function gStart(){
  function f1(event){
   for (var i = 0; i < 5; i++) {
    if (pets[i].act) {
-    if (event.pageX - 10 > pets[i].x && event.pageX - 10 < pets[i].x + 160 &&
-        event.pageY - 50 > pets[i].y && event.pageY - 50 < pets[i].y + 160) {
+    if ((event.pageX - 10 > pets[i].x) && (event.pageX - 10 < pets[i].x + 160) &&
+        (event.pageY - 50 > pets[i].y) && (event.pageY - 50 < pets[i].y + 160)) {
      let r = Math.floor(Math.random()*256);
      let g = Math.floor(Math.random()*256);
      let b = Math.floor(Math.random()*256);
@@ -69,8 +69,8 @@ function gStart(){
            }
          }
   /*--*/ for (var i = 0; i < 5; i++){
-           if (pets[i].dir == 0 && pets[i].x > 667 ||
-               pets[i].dir == 1 && pets[i].x < -159){
+           if ((pets[i].dir == 0) && (pets[i].x > 667) ||
+               (pets[i].dir == 1) && (pets[i].x < -159)){
              miss++;
              p2.textContent = "miss: " + miss.toString();
              pets[i].act = false;
