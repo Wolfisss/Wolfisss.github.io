@@ -50,7 +50,7 @@ function gStart(){
  function f2(time) {
   if (lastTime == null) lastTime = time;
   /*--*/ for (var i = 0; i < 5; i++){
-           if (!pets[i].act && Math.random < 0.5){
+           if (!pets[i].act && Math.random() < 0.5){
              pets[i].act = true;
              pets[i].pet = Math.floor(Math.random()*12) + 1;
              pets[i].dir = Math.floor(Math.random()*2);
