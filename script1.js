@@ -7,7 +7,7 @@ function f1() {
   var rId = requestAnimationFrame(f2);
   function f2(time) {
     if (lastTime == null) lastTime = time;
-    opop += 0.01*(time - lastTime);
+    opop += 0.001*(time - lastTime);
     lastTime = time;
     if (opop >= 1) cancelAnimationFrame(rId);
     else {
