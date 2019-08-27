@@ -8,6 +8,7 @@ function f1() {
   function f2(time) {
     if (lastTime == null) lastTime = time;
     opop += 0.01*(time - lastTime);
+    lastTime = time;
     if (opop >= 1) cancelAnimationFrame(rId);
     else {
       d1.style.opacity = opop;
