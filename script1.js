@@ -7,7 +7,7 @@ function f1() {
   var rId = requestAnimationFrame(f2);
   function f2(time) {
     if (lastTime == null) lastTime = time;
-    d1.style.opacity += 0.001*(time - lastTime)*0.01;
+    d1.style.opacity += 0.001*(time - lastTime);
     if (d1.style.opacity == 1) cancelAnimationFrame(rId);
     else requestAnimationFrame(f2);
   }
