@@ -7,7 +7,7 @@ body {
  margin-top: 15px;
 }
 .knopka {
- width: 100px;
+ width: 150px;
  height: 50px;
  margin: 20px;
  color: white;
@@ -16,7 +16,7 @@ body {
  border-radius: 8px;
 }
 .knopka:hover {
- width: 100px;
+ width: 150px;
  height: 50px;
  margin: 20px;
  color: yellow;
