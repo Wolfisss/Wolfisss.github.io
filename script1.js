@@ -1,7 +1,7 @@
 function f1() {
   var d1 = document.createElement("div");
+  d1.style.class = "knopka";
   document.body.appendChild(d1);
-  d1.style.cssText = "class: knopka";
  /* var rId = requestAnimationFrame(f2);
   var lastTime = null;
   function f2(time) {
