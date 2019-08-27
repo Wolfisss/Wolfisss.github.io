@@ -1,2 +1,2 @@
 let f1 = function() {alert("hello");}
-document.body.addEventListener("load", f1);
+window.addEventListener("load", f1);
