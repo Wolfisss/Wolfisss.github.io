@@ -113,7 +113,7 @@ function f3(event) {
     case 2: {
       scena = 1;
       var dd = document.querySelectorAll("div");
-      alert(dd.length.toString());
+      dd[0].style.opacity = 0;
     } break;
     case 3: {
     } break;
