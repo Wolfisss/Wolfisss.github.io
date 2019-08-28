@@ -49,4 +49,16 @@ function f1() {
     } break;
   } 
 }
+function f3() {
+  switch (scena) {
+    case 1: {
+    } break;
+    case 2: {
+    } break;
+    case 3: {
+    } break;
+    case 4: {
+    } break;
+  }
+}
 window.addEventListener("load", f1);
