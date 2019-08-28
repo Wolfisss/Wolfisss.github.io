@@ -112,7 +112,7 @@ function f3(event) {
     } break;
     case 2: {
       scena = 1;
-      var dd = document.querySelector("div");
+      var dd = document.querySelectorAll("div");
       alert(dd.length().toString());
     } break;
     case 3: {
