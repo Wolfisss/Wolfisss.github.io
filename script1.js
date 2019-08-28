@@ -47,10 +47,14 @@ function f1() {
     case 2: {
       var d1 = document.createElement("div");
       var d2 = document.createElement("div");
+      var d3 = document.createElement("div");
       d1.textContent = "azaza";
       d1.style.color = "white";
       d1.style.fontSize = 14;
       d2.classList.add("knopka");
+      d3.classList.add("txtcenter");
+      d3.textContent = "Ясненько";
+      d2.appendChild(d3);
       document.body.appendChild(d1);
       document.body.appendChild(d2);
     } break;
