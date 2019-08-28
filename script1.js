@@ -56,7 +56,7 @@ function f3(event) {
   switch (scena) {
     case 1: {
       var dd = document.querySelectorAll("div");
-      if (event.currentTarget == dd[1])
+      if (event.currentTarget == dd[2])
         alert("о боги, вы тыкнули по кнопке 2...");
     } break;
     case 2: {
