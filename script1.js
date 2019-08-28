@@ -23,6 +23,9 @@ function f1() {
       d1.style.opacity = 0;
       d2.style.opacity = 0;
       d3.style.opacity = 0;
+      d1.addEventListener("click", f3);
+      d2.addEventListener("click", f3);
+      d3.addEventListener("click", f3);
       document.body.appendChild(d1);
       document.body.appendChild(d2);
       document.body.appendChild(d3); 
@@ -52,6 +55,7 @@ function f1() {
 function f3() {
   switch (scena) {
     case 1: {
+      alert("о боги, вы тыкнули по кнопке...");
     } break;
     case 2: {
     } break;
