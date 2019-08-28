@@ -112,7 +112,7 @@ function f3(event) {
     } break;
     case 2: {
       scena = 1;
-      var dd = querySelectorAll("div");
+      var dd = document.querySelectorAll("div");
       var lastTime = null; var opop = 1;
       var rId = requestAnimationFrame(f2);
       function f2(time) {
