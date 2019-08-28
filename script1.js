@@ -49,8 +49,7 @@ function f1() {
       var d2 = document.createElement("div");
       d1.style.width = "600px";
       d1.style.color = white;
-      d1.textContent = "aza";
-      d1.style.opacity = 0;
+      d1.textContent = "azaza";
       d2.classList.add("knopka");
       document.body.appendChild(d1);
       document.body.appendChild(d2);
