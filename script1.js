@@ -41,7 +41,7 @@ function f1() {
         }
       }
       var ev = new Event("dblclick");
-      d1.dispatchEvent(ev);
+      document.body.dispatchEvent(ev);
     } break;
     case 2: {
     } break;
