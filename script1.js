@@ -48,8 +48,10 @@ function f1() {
       alert("scena 2");
     } break;
     case 3: {
+      alert("scena 3");
     } break;
     case 4: {
+      alert("scena 4");
     } break;
   } 
 }
