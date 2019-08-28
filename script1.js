@@ -45,7 +45,15 @@ function f1() {
       }
     } break;
     case 2: {
-      alert("scena 2");
+      var d1 = document.createElement("div");
+      var d2 = document.createElement("div");
+      d1.style.width = "600px";
+      d1.style.color = white;
+      d1.textContent = "aza";
+      d1.style.opacity = 0;
+      d2.classList.add("knopka");
+      document.body.appendChild(d1);
+      document.body.appendChild(d2);
     } break;
     case 3: {
       alert("scena 3");
