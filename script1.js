@@ -3,9 +3,29 @@ function f1() {
   switch (scena) {
     case 1: {
       var d1 = document.createElement("div");
+      var d2 = document.createElement("div");
+      var d3 = document.createElement("div");
+      var d1d = document.createElement("div");
+      var d2d = document.createElement("div");
+      var d3d = document.createElement("div");
       d1.classList.add("knopka");
+      d2.classList.add("knopka");
+      d3.classList.add("knopka");
+      d1d.classList.add("txtcenter");
+      d2d.classList.add("txtcenter");
+      d3d.classList.add("txtcenter");
+      d1d.textContent = "Играть";
+      d2d.textContent = "Настроить";
+      d3d.textContent = "Узнать";
+      d1.appendChild(d1d);
+      d2.appendChild(d2d);
+      d3.appendChild(d3d);
       d1.style.opacity = 0;
+      d2.style.opacity = 0;
+      d3.style.opacity = 0;
       document.body.appendChild(d1);
+      document.body.appendChild(d2);
+      document.body.appendChild(d3); 
       var lastTime = null; var opop = 0;
       var rId = requestAnimationFrame(f2);
       function f2(time) {
@@ -15,6 +35,8 @@ function f1() {
         if (opop >= 1) cancelAnimationFrame(rId);
         else {
           d1.style.opacity = opop;
+          d2.style.opacity = opop;
+          d3.style.opacity = opop;
           requestAnimationFrame(f2);
         }
       }
