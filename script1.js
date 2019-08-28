@@ -103,4 +103,4 @@ function f3(event) {
   }
 }
 window.addEventListener("load", f1);
-var tx = "Пошаговая игра Мир\nВы - лев.";
+var tx = "Пошаговая игра Мир \n Вы - лев.";
