@@ -52,10 +52,11 @@ function f1() {
     } break;
   } 
 }
-function f3() {
+function f3(event) {
   switch (scena) {
     case 1: {
-      alert("о боги, вы тыкнули по кнопке...");
+      if (event.currentTarget == d1)
+        alert("о боги, вы тыкнули по кнопке 1...");
     } break;
     case 2: {
     } break;
