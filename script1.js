@@ -50,7 +50,7 @@ function f1() {
       var d3 = document.createElement("div");
       d1.textContent = "azaza";
       d1.style.color = "white";
-      d1.style.fontSize = 14;
+      d1.style.fontSize = 20;
       d2.classList.add("knopka");
       d3.classList.add("txtcenter");
       d3.textContent = "Ясненько";
