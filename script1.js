@@ -47,8 +47,6 @@ function f1() {
     case 2: {
       var d1 = document.createElement("div");
       var d2 = document.createElement("div");
-      d1.style.width = "600px";
-      d1.style.color = white;
       d1.textContent = "azaza";
       d2.classList.add("knopka");
       document.body.appendChild(d1);
