@@ -113,7 +113,24 @@ function f3(event) {
     case 2: {
       scena = 1;
       var dd = document.querySelectorAll("div");
-      dd[0].style.opacity = 0;
+      var lastTime = null; var opop = 1;
+      var rId = requestAnimationFrame(f2);
+      function f2(time) {
+        if (lastTime == null) lastTime = time;
+        opop -= 0.001*(time - lastTime);
+        lastTime = time;
+        if (opop <= 0) {      
+          document.body.removeChild(dd[1]);
+          document.body.removeChild(dd[0]);
+          cancelAnimationFrame(rId);
+          f1();
+        }
+        else {
+          dd[0].style.opacity = opop;
+          dd[1].style.opacity = opop;
+          requestAnimationFrame(f2);
+        }
+      }
     } break;
     case 3: {
     } break;
