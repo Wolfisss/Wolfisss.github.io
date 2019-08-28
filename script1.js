@@ -45,6 +45,7 @@ function f1() {
       }
     } break;
     case 2: {
+      alert("scena 2");
     } break;
     case 3: {
     } break;
@@ -56,8 +57,27 @@ function f3(event) {
   switch (scena) {
     case 1: {
       var dd = document.querySelectorAll("div");
-      if (event.currentTarget == dd[2])
-        alert("о боги, вы тыкнули по кнопке 2...");
+      var lastTime = null; var opop = 1;
+      var rId = requestAnimationFrame(f2);
+      function f2(time) {
+        if (lastTime == null) lastTime = time;
+        opop -= 0.001*(time - lastTime);
+        lastTime = time;
+        if (opop <= 0) cancelAnimationFrame(rId);
+        else {
+          dd[0].style.opacity = opop;
+          dd[2].style.opacity = opop;
+          dd[4].style.opacity = opop;
+          requestAnimationFrame(f2);
+        }
+      }
+      if (event.currentTarget == dd[0]) scena = 4;
+      if (event.currentTarget == dd[2]) scena = 3;
+      if (event.currentTarget == dd[4]) scena = 2;
+      document.body.removeChild(dd[4]);
+      document.body.removeChild(dd[2]);
+      document.body.removeChild(dd[0]);
+      f1();
     } break;
     case 2: {
     } break;
