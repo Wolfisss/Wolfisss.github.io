@@ -48,7 +48,7 @@ function f1() {
       var d1 = document.createElement("div");
       var d2 = document.createElement("div");
       var d3 = document.createElement("div");
-      d1.textContent = tx1 + \n + tx2;
+      d1.textContent = tx1 + "\n" + tx2;
       d1.style.color = "white";
       d1.style.fontSize = "25px";
       d2.classList.add("knopka");
