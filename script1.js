@@ -48,7 +48,7 @@ function f1() {
       var d1 = document.createElement("div");
       var d2 = document.createElement("div");
       var d3 = document.createElement("div");
-      d1.textContent = "azaza";
+      d1.textContent = tx;
       d1.style.color = "white";
       d1.style.fontSize = "25px";
       d2.classList.add("knopka");
@@ -103,3 +103,4 @@ function f3(event) {
   }
 }
 window.addEventListener("load", f1);
+var tx = "Пошаговая игра Мир\nВы - лев.";
