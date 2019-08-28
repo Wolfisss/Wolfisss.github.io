@@ -40,8 +40,6 @@ function f1() {
           requestAnimationFrame(f2);
         }
       }
-      var ev = new Event("dblclick");
-      document.body.dispatchEvent(ev);
     } break;
     case 2: {
     } break;
