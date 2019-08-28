@@ -63,7 +63,16 @@ function f3(event) {
         if (lastTime == null) lastTime = time;
         opop -= 0.001*(time - lastTime);
         lastTime = time;
-        if (opop <= 0) cancelAnimationFrame(rId);
+        if (opop <= 0) {
+          cancelAnimationFrame(rId);
+          if (event.currentTarget == dd[0]) scena = 4;
+          if (event.currentTarget == dd[2]) scena = 3;
+          if (event.currentTarget == dd[4]) scena = 2;
+          document.body.removeChild(dd[4]);
+          document.body.removeChild(dd[2]);
+          document.body.removeChild(dd[0]);
+          f1();
+        }
         else {
           dd[0].style.opacity = opop;
           dd[2].style.opacity = opop;
@@ -71,13 +80,6 @@ function f3(event) {
           requestAnimationFrame(f2);
         }
       }
-      if (event.currentTarget == dd[0]) scena = 4;
-      if (event.currentTarget == dd[2]) scena = 3;
-      if (event.currentTarget == dd[4]) scena = 2;
-      document.body.removeChild(dd[4]);
-      document.body.removeChild(dd[2]);
-      document.body.removeChild(dd[0]);
-      f1();
     } break;
     case 2: {
     } break;
