@@ -57,21 +57,21 @@ function f3(event) {
   switch (scena) {
     case 1: {
       var dd = document.querySelectorAll("div");
+      if (event.currentTarget == dd[0]) scena = 4;
+      if (event.currentTarget == dd[2]) scena = 3;
+      if (event.currentTarget == dd[4]) scena = 2;
       var lastTime = null; var opop = 1;
       var rId = requestAnimationFrame(f2);
       function f2(time) {
         if (lastTime == null) lastTime = time;
         opop -= 0.001*(time - lastTime);
         lastTime = time;
-        if (opop <= 0) {  
-          if (event.currentTarget == dd[0]) scena = 4;
-          if (event.currentTarget == dd[2]) scena = 3;
-          if (event.currentTarget == dd[4]) scena = 2;
+        if (opop <= 0) {      
           document.body.removeChild(dd[4]);
           document.body.removeChild(dd[2]);
           document.body.removeChild(dd[0]);
-          f1();
           cancelAnimationFrame(rId);
+          f1();
         }
         else {
           dd[0].style.opacity = opop;
