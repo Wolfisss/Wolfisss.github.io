@@ -100,6 +100,10 @@ function f1() {
       d3.className = "knopka";
       d4.className = "knopka";
       d4.style.marginTop = "40px";
+      d1.addEventListener("click", fcl);
+      d2.addEventListener("click", fcl);
+      d3.addEventListener("click", fcl);
+      d4.addEventListener("click", f3);
       document.body.appendChild(d1);
       document.body.appendChild(d2);
       document.body.appendChild(d3);
@@ -164,6 +168,24 @@ function f3(event) {
     } break;
     case 4: {
     } break;
+  }
+}
+function fcl(event) {
+  var dd = document.querySelectorAll("div");
+  dd[0].className = "knopka";
+  dd[2].className = "knopka";
+  dd[4].className = "knopka";
+  if (event.currentTarget == dd[0]) {
+    diff = 1;
+    dd[0].className = "selctd";
+  }
+  if (event.currentTarget == dd[2]) {
+    diff = 2;
+    dd[2].className = "selctd";
+  }
+  if (event.currentTarget == dd[4]) {
+    diff = 3;
+    dd[4].className = "selctd";
   }
 }
 window.addEventListener("load", f1);
