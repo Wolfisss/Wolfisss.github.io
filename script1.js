@@ -184,7 +184,30 @@ function f3(event) {
       }
     } break;
     case 3: {
-      alert(diff.toString());
+      scena = 1;
+      var dd = document.querySelectorAll("div");
+      var lastTime = null; var opop = 1;
+      var rId = requestAnimationFrame(f2);
+      function f2(time) {
+        if (lastTime == null) lastTime = time;
+        opop -= 0.001*(time - lastTime);
+        lastTime = time;
+        if (opop <= 0) {      
+          document.body.removeChild(dd[6]);
+          document.body.removeChild(dd[4]);
+          document.body.removeChild(dd[2]);
+          document.body.removeChild(dd[0]);
+          cancelAnimationFrame(rId);
+          f1();
+        }
+        else {
+          dd[0].style.opacity = opop;
+          dd[2].style.opacity = opop;
+          dd[4].style.opacity = opop;
+          dd[6].style.opacity = opop;
+          requestAnimationFrame(f2);
+        }
+      } 
     } break;
     case 4: {
     } break;
