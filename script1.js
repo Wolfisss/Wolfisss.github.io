@@ -1,4 +1,4 @@
-var scena = 1;
+var scena = 1, diff = 1;
 function f1() {
   switch (scena) {
     case 1: {
@@ -75,7 +75,31 @@ function f1() {
       }
     } break;
     case 3: {
-      alert("scena 3");
+      var d1 = document.createElement("div");
+      var d2 = document.createElement("div");
+      var d3 = document.createElement("div");
+      var d4 = document.createElement("div");
+      var d1d = document.createElement("div");
+      var d2d = document.createElement("div");
+      var d3d = document.createElement("div");
+      var d4d = document.createElement("div");
+      d1d.className = "txtcenter";
+      d2d.className = "txtcenter";
+      d3d.className = "txtcenter";
+      d4d.className = "txtcenter";
+      d1.appendChild(d1d);
+      d2.appendChild(d2d);
+      d3.appendChild(d3d);
+      d4.appendChild(d4d);
+      d1.className = "knopka";
+      d2.className = "knopka";
+      d3.className = "knopka";
+      d4.className = "knopka";
+      d4.style.marginTop = "40px";
+      document.body.appendChild(d1);
+      document.body.appendChild(d2);
+      document.body.appendChild(d3);
+      document.body.appendChild(d4);
     } break;
     case 4: {
       alert("scena 4");
