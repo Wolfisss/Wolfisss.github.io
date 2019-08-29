@@ -87,6 +87,10 @@ function f1() {
       d2d.className = "txtcenter";
       d3d.className = "txtcenter";
       d4d.className = "txtcenter";
+      d1d.textContent = "1 лев";
+      d2d.textContent = "2 льва";
+      d3d.textContent = "3 льва";
+      d4d.textContent = "Ну, допустим";
       d1.appendChild(d1d);
       d2.appendChild(d2d);
       d3.appendChild(d3d);
