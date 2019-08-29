@@ -24,3 +24,12 @@ body {
  border: 2px solid yellow;
  border-radius: 8px;
 }
+.selctd {
+ width: 150px;
+ height: 50px;
+ margin: 20px;
+ color: red;
+ background: gray;
+ border: 2px solid red;
+ border-radius: 4px;
+}
