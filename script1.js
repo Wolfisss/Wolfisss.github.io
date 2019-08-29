@@ -104,10 +104,29 @@ function f1() {
       d2.addEventListener("click", fcl);
       d3.addEventListener("click", fcl);
       d4.addEventListener("click", f3);
+      d1.style.opacity = 0;
+      d2.style.opacity = 0;
+      d3.style.opacity = 0;
+      d4.style.opacity = 0;
       document.body.appendChild(d1);
       document.body.appendChild(d2);
       document.body.appendChild(d3);
       document.body.appendChild(d4);
+      var lastTime = null; var opop = 0;
+      var rId = requestAnimationFrame(f2);
+      function f2(time) {
+        if (lastTime == null) lastTime = time;
+        opop += 0.001*(time - lastTime);
+        lastTime = time;
+        if (opop >= 1) cancelAnimationFrame(rId);
+        else {
+          d1.style.opacity = opop;
+          d2.style.opacity = opop;
+          d3.style.opacity = opop;
+          d4.style.opacity = opop;
+          requestAnimationFrame(f2);
+        }
+      }
     } break;
     case 4: {
       alert("scena 4");
