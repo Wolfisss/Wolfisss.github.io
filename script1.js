@@ -165,6 +165,7 @@ function f3(event) {
       }
     } break;
     case 3: {
+      alert(diff.toString());
     } break;
     case 4: {
     } break;
