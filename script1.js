@@ -249,7 +249,17 @@ function f4() {
   d1.style.top = "0px"; d1.style.left ="0px";
   d2.style.top = "0px"; d2.style.left ="154px";
   document.body.appendChild(d1);
-   document.body.appendChild(d2);
+  document.body.appendChild(d2);
+  var dd = [], ddd;
+  for (var i = 0; i < 10; i++)
+   for (var j = 0; j < 10; j++) {
+     ddd = document.createElement("div");
+     ddd.className = "pole";
+     ddd.style.top = (56 + Math.floor(i / 10)*50).toString() + "px";
+     ddd.style.left = (j*50).toString() + "px";
+     dd.push(ddd);
+     document.body.appendChild(ddd);
+   }
 }
 window.addEventListener("load", f1);
 var tx = " Пошаговая игра Мир. Вы - лев. Против вас тоже львы. Один или несколько. " +
