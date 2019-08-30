@@ -35,3 +35,10 @@ body {
  border-radius: 8px;
  cursor: pointer;
 }
+pole {
+ width: 46px;
+ height: 46px;
+ background: gray;
+ border: 2px solid white;
+ border-radius: 8px;
+}
