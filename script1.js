@@ -260,7 +260,7 @@ function f4() {
      y = j*50;
      ddd.style.top = x.toString() + "px";
      ddd.style.left = y.toString() + "px";
-     document.body.appendChild(dd[dd.length - 1]);
+     document.body.appendChild(ddd);
    }
 }
 window.addEventListener("load", f1);
