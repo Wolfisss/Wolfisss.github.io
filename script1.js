@@ -252,15 +252,14 @@ function f4() {
   document.body.appendChild(d2);
   var dd = [];
   var ddd, x, y;
-  for (var i = 0; i < 10; i++)
-   for (var j = 0; j < 10; j++) {
+  for (var i = 0; i < 1; i++)
+   for (var j = 0; j < 1; j++) {
      ddd = document.createElement("div");
      ddd.className = "pole";   
      x = 56 + Math.floor(i/10)*50;
      y = j*50;
      ddd.style.top = x.toString() + "px";
      ddd.style.left = y.toString() + "px";
-     dd.push(ddd);
      document.body.appendChild(dd[dd.length - 1]);
    }
 }
