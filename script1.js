@@ -256,10 +256,10 @@ function f4() {
    for (var j = 0; j < 1; j++) {
      ddd = document.createElement("div");
      ddd.className = "pole";   
-     x = 56 + Math.floor(i/10)*50;
-     y = j*50;
-     ddd.style.top = x.toString() + "px";
-     ddd.style.left = y.toString() + "px";
+   //  x = 56 + Math.floor(i/10)*50;
+    // y = j*50;
+     ddd.style.top = "56px";
+     ddd.style.left = "0px";
      document.body.appendChild(ddd);
    }
 }
