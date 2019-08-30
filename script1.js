@@ -261,7 +261,7 @@ function f4() {
      ddd.style.top = x.toString() + "px";
      ddd.style.left = y.toString() + "px";
      dd.push(ddd);
-     document.body.appendChild(dd[dd.length - 1]));
+     document.body.appendChild(dd[dd.length - 1]);
    }
 }
 window.addEventListener("load", f1);
