@@ -1,4 +1,4 @@
-var scena = 1, diff = 1;
+var scena = 1, diff = 1, yea = 1, hung = 0;
 function f1() {
   switch (scena) {
     case 1: {
@@ -129,7 +129,7 @@ function f1() {
       }
     } break;
     case 4: {
-      alert("scena 4");
+      f4();
     } break;
   } 
 }
@@ -230,6 +230,26 @@ function fcl(event) {
     diff = 3;
     dd[4].className = "selctd";
   }
+}
+function f4() {
+  var d1 = document.createElement("div");
+  var d2 = document.createElement("div");
+  var d1d = document.createElement("div");
+  var d2d = document.createElement("div");
+  d1.className = "knopka";
+  d2.className = "knopka";
+  d1d.className = "txtcenter";
+  d2d.className = "txtcenter";
+  d1d.textContent = "Возраст: ";
+  d2d.textContent = "Сытость: ";
+  d1.appendChild(d1d);
+  d2.appendChild(d2d);
+  d1.style.position = "absolute";
+  d2.style.position = "absolute";
+  d1.style.top = "0px"; d1.style.left ="0px";
+  d2.style.top = "0px"; d2.style.left ="154px";
+  document.body.appendChild(d1);
+   document.body.appendChild(d2);
 }
 window.addEventListener("load", f1);
 var tx = " Пошаговая игра Мир. Вы - лев. Против вас тоже львы. Один или несколько. " +
