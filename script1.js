@@ -250,13 +250,16 @@ function f4() {
   d2.style.top = "0px"; d2.style.left ="154px";
   document.body.appendChild(d1);
   document.body.appendChild(d2);
-  var dd = [], ddd;
+  var dd = [];
+  var ddd, x, y;
   for (var i = 0; i < 10; i++)
    for (var j = 0; j < 10; j++) {
      ddd = document.createElement("div");
-     ddd.className = "pole";
-     ddd.style.top = (56 + Math.floor(i / 10)*50).toString() + "px";
-     ddd.style.left = (j*50).toString() + "px";
+     ddd.className = "pole";   
+     x = 56 + Math.floor(i/10)*50;
+     y = j*50;
+     ddd.style.top = x.toString() + "px";
+     ddd.style.left = y.toString() + "px";
      dd.push(ddd);
      document.body.appendChild(ddd);
    }
