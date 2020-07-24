@@ -7,7 +7,6 @@ canvas {
   background-color : gray;
 }
 div.ramka {
-  width: 800px;
   border: 2px solid white;
   border-radius: 5px;
   padding-left: 5px;
